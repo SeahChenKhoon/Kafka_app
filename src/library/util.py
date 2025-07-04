@@ -30,7 +30,9 @@ def read_env() -> Dict[str, str]:
         # Config Path 
         "bootstrap_server": os.getenv("BOOTSTRAP_SERVER", ""),
         "sender_email": os.getenv("SENDER_EMAIL", ""),
-        "password": os.getenv("PASSWORD", ""),
+        "password": os.getenv("SENDER_PASSWORD", ""),
+        "smtp_host": os.getenv("SMTP_HOST", ""),
+        "smtp_port": os.getenv("SMTP_PORT", ""),
         "config_path": os.getenv("CONFIG_PATH", ""),
     }
     return env_vars
