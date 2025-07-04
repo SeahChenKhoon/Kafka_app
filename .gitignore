@@ -1,2 +1,4 @@
 .env
 dockerfile
+src/library/__pycache__/
+src/services/__pycache__/
