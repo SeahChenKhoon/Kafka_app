@@ -1,0 +1,4 @@
+streamlit==1.45.1
+kafka-python==2.2.15
+PyYAML==6.0.2
+dotenv==0.9.9

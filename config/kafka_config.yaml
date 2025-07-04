@@ -1,0 +1,18 @@
+subject: "Welcome to Our Platform!"
+
+text_body: |
+  Hello {{ username }} and welcome!
+
+  We're excited to have you on board. If you have any questions or need support, feel free to reach out.
+
+  Best regards,
+  The Team
+
+html_body: |
+  <html>
+  <body>
+      <p>Hello {{ username }} and welcome!</p>
+      <p>We're excited to have you on board. If you have any questions or need support, feel free to reach out.</p>
+      <p>Best regards,<br>The Team</p>
+  </body>
+  </html>
