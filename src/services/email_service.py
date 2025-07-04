@@ -44,6 +44,6 @@ for message in consumer:
         message.attach(MIMEText(html, "html"))
 
         # Send the email via Gmail SMTP server
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        with smtplib.SMTP_SSL(env_variables["smtp_host"], env_variables["smtp_port"]) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
